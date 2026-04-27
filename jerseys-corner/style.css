@@ -528,6 +528,7 @@ ul { list-style: none; }
 /* Menu category section */
 .menu-category {
   margin-bottom: 80px;
+  scroll-margin-top: 110px;
 }
 .menu-category__head {
   display: flex;
@@ -1156,4 +1157,44 @@ ul { list-style: none; }
   .footer { padding: 60px 0 24px; }
   .footer__grid { grid-template-columns: 1fr; gap: 40px; }
   .footer__bottom { flex-direction: column; gap: 14px; text-align: center; }
+}
+
+
+/* ============================================================
+   14. SMOOTH SCROLL & BACK TO TOP
+   ============================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--rust);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 16px rgba(31, 24, 19, 0.18);
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease;
+  z-index: 50;
+}
+.back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.back-to-top:hover { background: var(--rust-dark); }
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
 }
