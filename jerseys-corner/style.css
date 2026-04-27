@@ -928,7 +928,7 @@ ul { list-style: none; }
    ============================================================ */
 
 .footer {
-  background: var(--bg-cream-deep);
+  background: var(--rust);
   padding: 80px 0 32px;
   margin-top: 40px;
 }
@@ -939,20 +939,29 @@ ul { list-style: none; }
   margin-bottom: 60px;
 }
 .footer__brand .brand { margin-bottom: 22px; }
+.footer__brand .brand__mark {
+  background: #FBE9E0;
+  color: var(--rust);
+}
+.footer__brand .brand__name { color: #FBE9E0; }
+.footer__brand .brand__tagline {
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.15);
+}
 .footer__brand p {
   margin-bottom: 28px;
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.78);
   font-size: 15px;
   line-height: 1.6;
   max-width: 320px;
 }
 .footer__email {
   display: flex;
-  background: var(--bg-cream-light);
+  background: #FBE9E0;
   border-radius: var(--radius-pill);
   padding: 5px;
   max-width: 360px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .footer__email input {
   border: 0;
@@ -965,7 +974,7 @@ ul { list-style: none; }
 }
 .footer__email input::placeholder { color: var(--ink-mute); }
 .footer__email button {
-  background: var(--burgundy);
+  background: var(--brown-deep);
   color: #fff;
   padding: 11px 22px;
   border-radius: var(--radius-pill);
@@ -975,31 +984,31 @@ ul { list-style: none; }
   font-weight: 600;
   transition: background 0.2s;
 }
-.footer__email button:hover { background: var(--burgundy-dark); }
+.footer__email button:hover { background: #000; }
 
 .footer h5 {
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 0.24em;
-  color: var(--rust);
+  color: rgba(255, 255, 255, 0.65);
   font-weight: 500;
   margin-bottom: 26px;
 }
 .footer ul li { margin-bottom: 14px; }
 .footer ul a {
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   transition: color 0.2s;
 }
-.footer ul a:hover { color: var(--burgundy); }
+.footer ul a:hover { color: #fff; }
 .footer__bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 32px;
-  border-top: 1.5px dotted var(--line);
+  border-top: 1.5px dotted rgba(255, 255, 255, 0.22);
   font-size: 13px;
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.7);
 }
 .footer__bottom .care {
   letter-spacing: 0.24em;
