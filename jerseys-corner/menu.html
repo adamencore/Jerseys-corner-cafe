@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — Jersey's Corner</title>
+  <meta name="description" content="The full Jersey's Corner menu. Sandwiches, burgers, salads, dinner platters — all made to order in Parowan, UT.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="brand">
+        <div class="brand__mark"><span>J</span></div>
+        <div class="brand__text">
+          <div class="brand__name">Jersey's Corner</div>
+          <div class="brand__tagline">EST. 1958 · Family Owned</div>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="index.html"   class="nav__link">Home</a></li>
+          <li><a href="menu.html"    class="nav__link is-active">Menu</a></li>
+          <li><a href="about.html"   class="nav__link">About</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__icon" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <a href="#book" class="btn btn--rust">Book a Table</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============== MENU HERO ============== -->
+  <section class="story-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--dotted">Our Menu</span>
+      <h1>Eclectic, hearty, <em>made fresh.</em></h1>
+      <p>Award-winning comfort food, elevated. Sandwiches, burgers, salads, dinner platters, and the local faves — all made to order.</p>
+    </div>
+  </section>
+
+
+  <!-- ============== CATEGORY PILLS ============== -->
+  <div class="container">
+    <div class="menu-pills">
+      <a href="#top"        class="menu-pill is-active">All</a>
+      <a href="#starters"   class="menu-pill">Starters</a>
+      <a href="#salads"     class="menu-pill">Salads</a>
+      <a href="#sandwiches" class="menu-pill">Sandwiches &amp; Wraps</a>
+      <a href="#burgers"    class="menu-pill">Burgers</a>
+      <a href="#local"      class="menu-pill">Local Faves</a>
+      <a href="#dinner"     class="menu-pill">Dinner Platters</a>
+      <a href="#kiddos"     class="menu-pill">For the Kiddos</a>
+      <a href="#beverages"  class="menu-pill">Beverages</a>
+    </div>
+  </div>
+
+
+  <!-- ============== STARTERS ============== -->
+  <div class="container section--tight">
+    <div class="menu-category" id="starters">
+      <div class="menu-category__head">
+        <h2 class="menu-category__title">Starters</h2>
+        <div class="menu-category__divider"></div>
+        <span class="menu-category__count">10 items</span>
+      </div>
+      <p class="menu-category__intro">Snacks, shareables, and the small stuff.</p>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__mono">F</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Fry Basket</h4>
+            <p class="menu-item__desc">Choice of coil or flat crispy. Served with house fry sauce. Add nacho cheese +$1.</p>
+          </div>
+          <div class="menu-item__price">$5</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">O</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Onion Tangler Basket</h4>
+            <p class="menu-item__desc">Crispy fried onions served with house chipotle garlic ranch.</p>
+          </div>
+          <div class="menu-item__price">$6</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">T</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Tater Ring Basket</h4>
+            <p class="menu-item__desc">Served with house fry sauce. Top with nacho cheese for $1.</p>
+          </div>
+          <div class="menu-item__price">$6.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">F</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Fried Pickles</h4>
+            <p class="menu-item__desc">Hand-breaded and served with house creole aioli and creamy ranch.</p>
+          </div>
+          <div class="menu-item__price">$8</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">M</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Mac &amp; Cheese Bites</h4>
+            <p class="menu-item__desc">Golden, crispy, and served with house chipotle garlic ranch.</p>
+          </div>
+          <div class="menu-item__price">$6.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Chicken Wings</h4>
+            <p class="menu-item__desc">Plain, garlic parm, sweet teriyaki, BBQ, buffalo, hot honey garlic, or mango habanero. Served with ranch.</p>
+            <div class="menu-item__tags"><span class="tag">8 pcs</span></div>
+          </div>
+          <div class="menu-item__price">$11.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">B</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Boneless Wings</h4>
+            <p class="menu-item__desc">Tossed in your choice of sauce. Served with house chipotle garlic ranch.</p>
+          </div>
+          <div class="menu-item__price">$12</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Chicken Pesto Flatbread</h4>
+            <p class="menu-item__desc">Grilled chicken, basil pesto, mozzarella, tomatoes, and a balsamic glaze drizzle.</p>
+          </div>
+          <div class="menu-item__price">$12.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Chicken Bacon Ranch Flatbread</h4>
+            <p class="menu-item__desc">Crispy chicken, cheddar, bacon, and ranch with a jalapeño ranch drizzle.</p>
+          </div>
+          <div class="menu-item__price">$12.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Cheddar Jalapeño Poppers</h4>
+            <p class="menu-item__desc">Six poppers, served with house ranch.</p>
+          </div>
+          <div class="menu-item__price">$8.50</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============== SALADS ============== -->
+    <div class="menu-category" id="salads">
+      <div class="menu-category__head">
+        <h2 class="menu-category__title">Salads</h2>
+        <div class="menu-category__divider"></div>
+        <span class="menu-category__count">3 items</span>
+      </div>
+      <p class="menu-category__intro">Dressings: ranch, blue cheese, italian, 1000 island, honey mustard, or blood orange shallot vinaigrette.</p>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__mono">H</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">House Salad</h4>
+            <p class="menu-item__desc">Green leaf lettuce, grape tomatoes, cucumbers, cheddar, and croutons with choice of dressing.</p>
+          </div>
+          <div class="menu-item__price">$6.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">O</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Orange Chicken Salad</h4>
+            <p class="menu-item__desc">Crispy or grilled chicken, shredded carrots, tomatoes, cucumbers, crispy noodles, and mandarin oranges with blood orange shallot vinaigrette.</p>
+          </div>
+          <div class="menu-item__price">$14.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Chef Salad</h4>
+            <p class="menu-item__desc">Green leaf lettuce, grilled chicken, grape tomatoes, shredded carrots, cucumbers, cheddar, swiss, and hardboiled egg with choice of dressing.</p>
+          </div>
+          <div class="menu-item__price">$11.50</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============== SANDWICHES & WRAPS ============== -->
+    <div class="menu-category" id="sandwiches">
+      <div class="menu-category__head">
+        <h2 class="menu-category__title">Sandwiches &amp; Wraps</h2>
+        <div class="menu-category__divider"></div>
+        <span class="menu-category__count">8 items</span>
+      </div>
+      <p class="menu-category__intro">Served with flat fries, coil fries, onion tanglers, or a side salad.</p>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__mono">O</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Original Chicken Sandwich <span class="tag tag--star">Popular</span></h4>
+            <p class="menu-item__desc">Grilled or crispy chicken breast with chipotle mayo, red onion, tomato, and lettuce on brioche bun.</p>
+            <div class="menu-item__tags"><span class="tag">House Favorite</span></div>
+          </div>
+          <div class="menu-item__price">$11.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">H</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Hot Honey Garlic Chicken</h4>
+            <p class="menu-item__desc">Crispy chicken breast tossed in hot honey garlic sauce with house ranch and pickles on brioche bun.</p>
+            <div class="menu-item__tags"><span class="tag">Spicy</span></div>
+          </div>
+          <div class="menu-item__price">$15.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">P</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Pastrami Reuben</h4>
+            <p class="menu-item__desc">Pastrami, swiss, sauerkraut, and house 1000 island on grilled marble rye.</p>
+          </div>
+          <div class="menu-item__price">$15</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">P</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Philly Cheesesteak</h4>
+            <p class="menu-item__desc">Thin sliced beef, grilled onions, red peppers, and mushrooms topped with cheese sauce on a grilled toasted hoagie.</p>
+          </div>
+          <div class="menu-item__price">$13</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">H</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Hot N' Nasty Grilled Cheese</h4>
+            <p class="menu-item__desc">Shredded beef, house pickled onions, swiss, blackberry jam, and lettuce on grilled sourdough.</p>
+          </div>
+          <div class="menu-item__price">$13</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">V</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Veggie Sandwich</h4>
+            <p class="menu-item__desc">Cucumber, red onion, tomato, avocado, shredded carrots, sprouts, lettuce, and chipotle aioli.</p>
+            <div class="menu-item__tags"><span class="tag">Veggie</span></div>
+          </div>
+          <div class="menu-item__price">$11</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Chicken Bacon Ranch Wrap</h4>
+            <p class="menu-item__desc">Crispy chicken breast, bacon, cheddar, lettuce, and house ranch in your choice of plain flour, wheat, or tomato basil tortilla.</p>
+          </div>
+          <div class="menu-item__price">$13</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">V</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Veggie Wrap</h4>
+            <p class="menu-item__desc">Cream cheese, cucumber, red onion, tomato, avocado, shredded carrots, sprouts, lettuce, and chipotle ranch in plain flour or tomato basil tortilla.</p>
+            <div class="menu-item__tags"><span class="tag">Veggie</span></div>
+          </div>
+          <div class="menu-item__price">$11</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============== BURGERS ============== -->
+    <div class="menu-category" id="burgers">
+      <div class="menu-category__head">
+        <h2 class="menu-category__title">Burgers</h2>
+        <div class="menu-category__divider"></div>
+        <span class="menu-category__count">9 items</span>
+      </div>
+      <p class="menu-category__intro">All patties are 6 oz. and served on a brioche bun unless otherwise specified. Gluten free bun +$2.50. Served with choice of coil fries, crispy thin fries, or onion tanglers and pickle spear. Add small side salad +$3.</p>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__mono">P</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Plain Jane</h4>
+            <p class="menu-item__desc">Cheeseburger with onion, tomato, lettuce, and house burger sauce.</p>
+          </div>
+          <div class="menu-item__price">$12</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">G</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Garlic Lovers</h4>
+            <p class="menu-item__desc">Cheeseburger with grilled onions and garlic aioli.</p>
+          </div>
+          <div class="menu-item__price">$13</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">W</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Western</h4>
+            <p class="menu-item__desc">Cheeseburger with crispy fried onions and BBQ sauce. Add bacon +$2.</p>
+          </div>
+          <div class="menu-item__price">$13</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">M</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Mac Attack</h4>
+            <p class="menu-item__desc">Cheeseburger with cheddar, bacon, house mac &amp; cheese, and chipotle aioli.</p>
+          </div>
+          <div class="menu-item__price">$15</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">P</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Pastrami</h4>
+            <p class="menu-item__desc">Cheeseburger with swiss, thin sliced pastrami, onion, tomato, lettuce, and house burger sauce.</p>
+          </div>
+          <div class="menu-item__price">$15.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">T</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">TKO</h4>
+            <p class="menu-item__desc">Pepper jack cheese, jalapeño poppers, bacon, and jalapeño ranch.</p>
+            <div class="menu-item__tags"><span class="tag">Spicy</span></div>
+          </div>
+          <div class="menu-item__price">$15</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">F</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Farm</h4>
+            <p class="menu-item__desc">Cheeseburger with bacon, fried egg, onion, tomato, lettuce, and house burger sauce.</p>
+          </div>
+          <div class="menu-item__price">$15.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">G</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Gyro</h4>
+            <p class="menu-item__desc">Burger patty topped with lamb/beef gyro meat, lettuce, tomato, onion, tzatziki, and feta.</p>
+          </div>
+          <div class="menu-item__price">$16.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">B</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Big Bad Boy <span class="tag tag--star">Popular</span></h4>
+            <p class="menu-item__desc">Four 6 oz. patties layered with bacon, pastrami, grilled onions, pepper jack, swiss, tomato, onion, lettuce, and burger sauce.</p>
+            <div class="menu-item__tags"><span class="tag">Big Appetite</span></div>
+          </div>
+          <div class="menu-item__price">$25</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============== LOCAL FAVES ============== -->
+    <div class="menu-category" id="local">
+      <div class="menu-category__head">
+        <h2 class="menu-category__title">Local Faves</h2>
+        <div class="menu-category__divider"></div>
+        <span class="menu-category__count">7 items</span>
+      </div>
+      <p class="menu-category__intro">The dishes regulars come back for.</p>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__mono">S</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Smash Burger Tacos <span class="tag tag--star">Popular</span></h4>
+            <p class="menu-item__desc">A mini bacon smash burger in a street taco. 6 oz beef patty, diced pickles, cheddar, bacon, shredded lettuce, and chipotle garlic ranch in flour tortillas. 3 to an order.</p>
+          </div>
+          <div class="menu-item__price">$13.95</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Carnita Tacos</h4>
+            <p class="menu-item__desc">Shredded pork, avocado, salsa verde, oaxaca cheese, and chicharrones in a warm corn tortilla. 3 to an order.</p>
+          </div>
+          <div class="menu-item__price">$13.95</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">G</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Greek Gyro</h4>
+            <p class="menu-item__desc">Lamb and beef gyro meat with red onion, tomato, lettuce, tzatziki, and feta in a warm pita wrap. Served with greek seasoned thick fries.</p>
+          </div>
+          <div class="menu-item__price">$15</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">B</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Bubba Mac</h4>
+            <p class="menu-item__desc">Crispy chicken breast, house mac and cheese, black truffle hot sauce, and mayo on a brioche bun.</p>
+          </div>
+          <div class="menu-item__price">$16</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">D</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Dirty South Grilled Cheese</h4>
+            <p class="menu-item__desc">House mac and cheese, BBQ pulled pork, and cheddar on grilled sourdough.</p>
+          </div>
+          <div class="menu-item__price">$15</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">B</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Bacon Mushroom Swiss Burger</h4>
+            <p class="menu-item__desc">6 oz. patty, grilled mushrooms, bacon, swiss, and burger sauce on a brioche bun.</p>
+          </div>
+          <div class="menu-item__price">$15</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">P</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Pig Pen</h4>
+            <p class="menu-item__desc">Shredded pork, jalapeños, house BBQ, pepper jack, and onion tanglers on a brioche bun.</p>
+          </div>
+          <div class="menu-item__price">$15</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============== DINNER PLATTERS ============== -->
+    <div class="menu-category" id="dinner">
+      <div class="menu-category__head">
+        <h2 class="menu-category__title">Dinner Platters</h2>
+        <div class="menu-category__divider"></div>
+        <span class="menu-category__count">4 items</span>
+      </div>
+      <p class="menu-category__intro">Hearty mains, plated up.</p>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Chicken Parmesan</h4>
+            <p class="menu-item__desc">Breaded chicken breast with marinara, melted mozzarella, and parmesan on a bed of linguine. Includes a small side salad with choice of dressing and a roll.</p>
+          </div>
+          <div class="menu-item__price">$18.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Chicken Basil Alfredo</h4>
+            <p class="menu-item__desc">Fire-braised chicken breast on top of linguine with house basil alfredo and parmesan. Served with side salad and a roll.</p>
+          </div>
+          <div class="menu-item__price">$18.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">H</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Herb Butter Rib Eye Dinner <span class="tag tag--star">Popular</span></h4>
+            <p class="menu-item__desc">12 oz. ribeye topped with house-made herb butter, served with basil pesto mashed potatoes, garlic green beans, a small side salad, and a roll.</p>
+          </div>
+          <div class="menu-item__price">$30</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">W</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Waffle Tower Mac</h4>
+            <p class="menu-item__desc">Two crispy mac &amp; cheese waffles topped with shredded pork, house-made pickled onions, and a BBQ sauce drizzle.</p>
+            <div class="menu-item__tags"><span class="tag">House Special</span></div>
+          </div>
+          <div class="menu-item__price">$16.50</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============== FOR THE KIDDOS ============== -->
+    <div class="menu-category" id="kiddos">
+      <div class="menu-category__head">
+        <h2 class="menu-category__title">For the Kiddos</h2>
+        <div class="menu-category__divider"></div>
+        <span class="menu-category__count">4 items</span>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__mono">F</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Fluffernutter Sandwich</h4>
+            <p class="menu-item__desc">Creamy peanut butter and marshmallow cream on grilled texas toast. Served with coil fries.</p>
+          </div>
+          <div class="menu-item__price">$8.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">G</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Grilled Cheese</h4>
+            <p class="menu-item__desc">American cheese on grilled texas toast. Served with coil fries.</p>
+          </div>
+          <div class="menu-item__price">$6.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Chicken Finger Basket</h4>
+            <p class="menu-item__desc">4 fingers with coil fries. Served with ranch.</p>
+          </div>
+          <div class="menu-item__price">$9.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">W</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Waffle Iron Pizza Pocket</h4>
+            <p class="menu-item__desc">Waffle iron biscuit pizza pocket stuffed with pizza sauce, mozzarella, and pepperoni. Served with coil fries.</p>
+          </div>
+          <div class="menu-item__price">$10.50</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============== BEVERAGES ============== -->
+    <div class="menu-category" id="beverages">
+      <div class="menu-category__head">
+        <h2 class="menu-category__title">Beverages</h2>
+        <div class="menu-category__divider"></div>
+        <span class="menu-category__count">7 items</span>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__mono">F</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Fountain Soda</h4>
+            <p class="menu-item__desc">Coke, Diet Coke, Dr. Pepper, Sprite, Orange Fanta, Pink Lemonade.</p>
+          </div>
+          <div class="menu-item__price">$2.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">I</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Iced or Hot Tea</h4>
+          </div>
+          <div class="menu-item__price">$2</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Coffee</h4>
+          </div>
+          <div class="menu-item__price">$2</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">H</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Hot Chocolate</h4>
+          </div>
+          <div class="menu-item__price">$2.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">C</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Cappuccino</h4>
+            <p class="menu-item__desc">Vanilla or mocha.</p>
+          </div>
+          <div class="menu-item__price">$2.50</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">J</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Juice</h4>
+            <p class="menu-item__desc">Orange or apple.</p>
+          </div>
+          <div class="menu-item__price">$2</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__mono">M</div>
+          <div class="menu-item__body">
+            <h4 class="menu-item__title">Milk</h4>
+          </div>
+          <div class="menu-item__price">$2</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============== ADVISORY ============== -->
+    <p style="max-width:760px;margin:60px auto 80px;text-align:center;font-size:13px;color:var(--ink-soft);line-height:1.7;letter-spacing:0.02em;">
+      Ask your server about daily specials and desserts. Please let us know about any food allergies or dietary restrictions — we are not exclusively gluten free, so cross-contamination is possible. Consumption of undercooked meat, poultry, eggs, or seafood may increase the risk of food-borne illness.
+    </p>
+  </div>
+
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="brand">
+            <div class="brand__mark"><span>J</span></div>
+            <div class="brand__text">
+              <div class="brand__name">Jersey's Corner</div>
+              <div class="brand__tagline">EST. 1958 · Family Owned</div>
+            </div>
+          </a>
+          <p>A family-owned corner of comfort food, on Main Street since 1958. Award-winning, made fresh to order.</p>
+          <form class="footer__email" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Your email" aria-label="Your email">
+            <button type="submit">Join</button>
+          </form>
+        </div>
+        <div>
+          <h5>Visit</h5>
+          <ul>
+            <li>30 N Main St<br>Parowan, UT 84761</li>
+            <li><a href="tel:4352630963">(435) 263-0963</a></li>
+            <li><a href="mailto:hello@jerseyscorner.com">hello@jerseyscorner.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact &amp; Hours</a></li>
+            <li><a href="#book">Reservations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Google Reviews</a></li>
+            <li><a href="#">DoorDash</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div>© 2026 Jersey's Corner · Family Owned · All Rights Reserved</div>
+        <div class="care">Made with care</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
