@@ -409,11 +409,10 @@ ul { list-style: none; }
 .dish-card {
   background: var(--bg-card);
   border-radius: var(--radius-card);
-  padding: 28px 28px 32px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  text-align: left;
   position: relative;
   overflow: hidden;
 }
@@ -425,7 +424,8 @@ ul { list-style: none; }
 .dish-card__tag {
   position: absolute;
   top: 18px; left: 18px;
-  background: rgba(255, 255, 255, 0.65);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85);
   padding: 6px 12px;
   border-radius: var(--radius-pill);
   font-size: 10px;
@@ -436,25 +436,10 @@ ul { list-style: none; }
   backdrop-filter: blur(4px);
 }
 
-.dish-card__monogram {
-  width: 110px; height: 110px;
-  border-radius: 50%;
-  background: var(--brown-deep);
-  color: var(--bg-cream);
-  display: grid;
-  place-items: center;
-  font-family: var(--font-display);
-  font-size: 50px;
-  font-style: italic;
-  margin: 36px 0 36px;
-  flex-shrink: 0;
-}
 .dish-card__photo {
-  width: 110px; height: 110px;
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
-  margin: 36px 0;
-  flex-shrink: 0;
   background: var(--brown-deep);
 }
 .dish-card__photo img {
@@ -463,30 +448,49 @@ ul { list-style: none; }
   object-fit: cover;
   display: block;
 }
+
+.dish-card__body {
+  padding: 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .dish-card__name {
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   margin-bottom: 8px;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  line-height: 1.1;
 }
 .dish-card__price {
   font-family: var(--font-display);
-  font-size: 23px;
-  margin-bottom: 24px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: var(--ink);
+}
+.dish-card__desc {
+  font-size: 15px;
   color: var(--ink-soft);
+  line-height: 1.5;
+  margin-bottom: 24px;
+  flex: 1;
 }
 .dish-card__btn {
   width: 100%;
   background: var(--burgundy);
   color: #fff;
-  padding: 14px 20px;
+  padding: 16px 20px;
   border-radius: var(--radius-pill);
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 600;
   transition: background 0.2s;
+  text-align: center;
+  display: block;
 }
 .dish-card__btn:hover { background: var(--burgundy-dark); }
 
